@@ -1,0 +1,26 @@
+package ejerciciosdearrays;
+
+import java.util.Arrays;
+
+public class swapEnds {
+	static int aux;
+	static int aux2;
+
+		public static int[] cambiarValor(int[]nums) {
+			
+			
+			aux=nums[nums.length-1];
+			aux2=nums[0];
+			nums[0]=aux;
+			nums[nums.length-1]=aux2;
+			return nums;
+			
+		}
+	public static void main(String[] args) {
+		int[]nums= {1, 2, 3, 4};
+		System.out.println(Arrays.toString(swapEnds.cambiarValor(nums)));
+		
+
+	}
+
+}
